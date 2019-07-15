@@ -1,0 +1,68 @@
+
+
+header{
+	background-color:black;
+    width:100%;
+    height:450px;
+    /*background-image: url(../img/BIYSC.png);*/
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Source Sans Pro";
+}
+
+#text_div{
+	width: 70%;
+}
+
+header p{
+	color: white;
+	text-align: center;
+}
+
+body{
+	overflow: scroll;
+}
+
+.horizontal_line{
+	border: 5px;
+    height: 5px;
+    /*border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);*/
+    background-color: rgb(225, 228, 230);
+	width: 40%;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#horziontal_div{
+	display: flex;
+	justify-content: left;
+}
+
+article{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#section{
+	width: 80%;
+	height: 600px;
+	background-color: #222222;
+	display: flex;
+	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.diseases{
+	width: 47%;
+	height: 47%;
+	background-color: #424040;
+	margin: 10px;
+	border-radius: 5px;
+}
