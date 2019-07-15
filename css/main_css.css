@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+
+::selection {
+  background: #FFF300; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFF300; /* Gecko Browsers */
+}
+
+
+#mheader{
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 0;
+}
+
+#container_text_jon{
+	display: flex;
+	flex-direction: column;
+}
+
+#mnavbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position:relative; 
+	z-index:3;
+}
+
+#pagesdiv{
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+}
+
+.navbar_items{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+	font-size: 125%;
+	display: flex;
+	align-items: center;
+	/*text-transform: uppercase;*/
+}
+.footer_items{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+	font-size: 125%;
+	display: flex;
+	align-items: center;
+	/*text-transform: uppercase;*/
+}
+
+#logodiv{
+	display: flex;
+	align-items: center;
+}
+
+.text_jon{
+	font-size: 156.25%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	margin: 0;
+	color: white;
+}
+
+#text_random{
+	font-size: 82.25%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+
+#main_content_container{
+	width: 100%;
+	display: flex;
+	flex-direction: colum;
+	justify-content: center;
+}
+
+#main_content{
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+main{
+	width: 60%;
+}
+
+h1{
+	text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: orange;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+#author_div{
+	display: flex;
+	flex-direction: row;
+}
+
+.author{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: grey;
+	font-size: 17px;
+}
+
+.horizontal_line{
+	border: 5px;
+    height: 5px;
+    /*border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);*/
+    background-color: rgb(225, 228, 230);
+	width: 20%;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#horziontal_div{
+	display: flex;
+	justify-content: left;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --mainColor: #ff9800;
+}
+
+#main_content_container a {
+	background:
+	linear-gradient(to bottom, var(--mainColor) 0%,var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	color: #000;
+	text-decoration: none;
+	transition: background-size .2s;
+}
+
+#main_content_container a:hover {
+  	background-size: 4px 50px;
+}
+
+#mheader a {
+	text-decoration: none;
+}
+
+#mheader a:hover {
+  	color: yellow;
+}
+
+body img{
+	width: 100%;
+
+}
+
+#other_posts{
+	width: 100%;
+	height: 500px;
+	background-color: rgb(66, 72, 82);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#other_posts_div{
+	background-color: white;
+	width: 60%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.other_posts_sect{
+	height: 100%;
+	width: 50%;
+	background-color: rgb(66, 72, 82);
+	color: white;
+}
+
+
+footer{
+	width: 100%;
+	height: 300px;
+	background-color: rgb(43, 46, 51);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.footer_social{
+	height: 30px; 
+	width: 30px; 
+	margin-right: 10px;
+}
+
+#social_footer{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.social_div{
+	margin-top: 10%;
+}
+
+#bottom_footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	background-color: rgb(25, 25, 25);
+	/*height: 44px;*/
+}
+
+.bottom_footer_items{
+	margin: 0;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	/*border: 0px;
+	border-right: 3px; 
+	border-color: white; 
+	border-style: solid;*/
+}
+
+#container_horziontal_div{
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#div_share_buttons{
+	width: 60%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.sharethis_buttons{
+	width: 20%;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: red;
+	border-radius: 10px;
+}
