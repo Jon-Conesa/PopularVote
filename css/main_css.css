@@ -25,6 +25,7 @@ header p{
 body{
 	overflow: scroll;
    overflow-x: hidden;
+   font-family: "Source Sans Pro", "Sans";
 }
 
 .horizontal_line{
@@ -47,11 +48,12 @@ article{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: white;
 }
 
 #section{
-	width: 80%;
-	height: 600px;
+	width: 90%;
+	height: 100%;
 	background-color: #222222;
 	display: flex;
 	flex-direction: row;
@@ -62,13 +64,15 @@ article{
 
 .diseases{
 	width: 47%;
-	height: 47%;
+	height: 100%;
 	background-color: /*#424040*/;
 	margin: 10px;
-	border-radius: 5px;
+	border-radius: 10px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	border: 5px solid;
+	border-color: white;
 }
 
 .disease_title{
@@ -100,7 +104,106 @@ article{
 	border-radius: 10px;
 }
 
-#Alzheimer{
-	border-right: 5px;
-	border-color: white;
+
+
+
+
+.vote_button:hover {
+  	/*background-color: #4CAF50;
+  	color: white;
+  	-webkit-transition-duration: 0.4s; 
+  	transition-duration: 0.4s;*/
+}
+
+
+.alz{
+	background-color: #00FFFF; 
+	color: black;
+	border: 2px solid #00FFFF;
+}
+
+.alz:hover{
+	background-color: #222222;
+	color: white;
+	border: 2px solid #00FFFF;
+  	-webkit-transition-duration: 0.4s; 
+  	transition-duration: 0.4s;*
+
+}
+
+.park{
+	background-color: #00FF00; 
+	color: black;
+	border: 2px solid #00FF00;
+}
+
+.park:hover{
+	background-color: #222222;
+	color: white;
+	border: 2px solid #00FF00;
+  	-webkit-transition-duration: 0.4s; 
+  	transition-duration: 0.4s;*
+
+}
+
+.hun{
+	background-color: #FFFF00; 
+	color: black;
+	border: 2px solid #FFFF00;
+}
+
+.hun:hover{
+	background-color: #222222;
+	color: white;
+	border: 2px solid #FFFF00;
+  	-webkit-transition-duration: 0.4s; 
+  	transition-duration: 0.4s;*
+
+}
+
+.dow{
+	background-color: #FF0000; 
+	color: black;
+	border: 2px solid #FF0000;
+}
+
+.dow:hover{
+	background-color: #222222;
+	color: white;
+	border: 2px solid #FF0000;
+  	-webkit-transition-duration: 0.4s; 
+  	transition-duration: 0.4s;*
+
+}
+
+#counter{
+	width: 100%;
+	height: 100px;
+	background-color: #222222 ;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.counter_disease{
+	width: 15%;
+	height: 100%;
+	background-color: #222222;
+	display: flex;
+	flex-direction: column;
+	align-items: top;
+	justify-content: center;
+}
+
+.disease_counter_title{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.number{
+	font-size: 40px;
+	margin: 0;
+	text-align: center;
+	color: white;
 }
