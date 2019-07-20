@@ -9,15 +9,15 @@
         die("Connection failed: " . $conn->connect_error);
     } 
 
-    $sql = "UPDATE Counter SET visits = visits+1 WHERE id = 1";
+    $sql = "UPDATE Counter SET alz = alz+1 WHERE id = 1";
     $conn->query($sql);
 
-    $sql = "SELECT visits FROM Counter WHERE id = 1";
+    $sql = "SELECT alz FROM Counter WHERE id = 1";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            $visits = $row["visits"];
+            $alz = $row["alz"];
         }
     } else {
         echo "no results";
@@ -89,7 +89,7 @@
 			</div>
 			<div id="Down" class="diseases">
 				<p class="disease_title"><span style="background-color: #FF0000; color: black;">Down</span> Syndrom</p>
-				<p class="main_expl">A neurodevelopmental and neurodegenrative disorder caused by the trisomy of chromosome 21 resulting in misregulation of these proteins affecting many of the cell’s pathways including the beta amyloid precursor protein resulting in Alzhiemer’s</p>
+				<p class="main_expl">A neurodevelopmental and neurodegenrative disorder caused by the trisomy of chromosome 21 resulting in misregulation of these proteins affecting many of the cell’s pathways including the beta amyloid precursor protein resulting in Alzhiemer’s <?php print $alz; ?></p>
 				<button class="vote_button dow"> Vote! </button><br>
 			</div>
 		</div>

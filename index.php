@@ -1,8 +1,8 @@
 <?php
     $servername = "sql312.epizy.com";
     $username = "epiz_24198624";
-    $password = "yEj2k3vm8vNPk9B";
-    $dbname = "epiz_24198624_votes";
+    $password = "ave5renato";
+    $dbname = "epiz_24198624_visits";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
@@ -89,7 +89,7 @@
 			</div>
 			<div id="Down" class="diseases">
 				<p class="disease_title"><span style="background-color: #FF0000; color: black;">Down</span> Syndrom</p>
-				<p class="main_expl">A neurodevelopmental and neurodegenrative disorder caused by the trisomy of chromosome 21 resulting in misregulation of these proteins affecting many of the cell’s pathways including the beta amyloid precursor protein resulting in Alzhiemer’s</p>
+				<p class="main_expl">A neurodevelopmental and neurodegenrative disorder caused by the trisomy of chromosome 21 resulting in misregulation of these proteins affecting many of the cell’s pathways including the beta amyloid precursor protein resulting in Alzhiemer’s <?php print $visits; ?></p>
 				<button class="vote_button dow"> Vote! </button><br>
 			</div>
 		</div>
